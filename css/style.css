@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'ASTRO';
+    src: url('ASTROSPACE-EZ2BG.TTF');
+}
+*, *::before , *::after {
+    box-sizing: border-box;
+}
+
+span {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+body {
+    padding: 0; 
+    margin : 0 ;
+    background-color: #2F303A;
+    font-family: 'ASTRO' , sans-serif ;
+    min-height: 100vh;
+}
+
+.full-height-grow {
+    display: flex; 
+    flex-direction:  column ; 
+}
+.brand-logo {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none ;
+    margin-left: 0rem ; 
+    margin-top: 0px;
+    /* 1 rem = 16px */
+}
+.main-nav {
+    overflow: hidden;
+    background-color: #2F303A;
+    width: 100%;
+  
+}
+
+.main-nav ul {
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
+    margin : 0 ;
+    padding : 0 ;
+    list-style: none;
+    position: relative;
+    font-size: 14px;
+    
+    
+} 
+
+.main-nav a {
+    color : white ;
+    text-decoration : none ;
+    padding : 30px ;
+    display: block;
+}
+
+.main-nav.active a {
+    color : wheat ;
+    text-decoration : none ;
+    padding : 30px ;
+    display: block;
+}
+
+
+.main-nav a:hover {
+    color : #FFFFFF ;
+}
+
+.active , .main-nav a:hover {
+    color : wheat ;
+}
+.main-header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center ;
+    height: 100px;
+    width: 1290px;
+    position: fixed;
+    background-color: #2F303A;
+    
+}
+
+.sticky {
+    position: fixed ;
+    width: 100%;
+    top : 0px ;
+}
+
+.sticky + .home-main-section {
+    padding-top: 30px  ;
+}
+.container {
+    max-width: 1200px;
+    margin : 0 auto ;
+    padding: 0 40px ;
+}
+
+.title {
+    font-weight: 400 ;
+    font-size : 40px ;
+    margin-bottom: 1rem;
+  
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px; 
+    margin-bottom: 2rem ;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: flex-start;
+}
+.subtitle2 {
+
+    font-weight: 400 ;
+    font-size: 20px;
+    margin-bottom: 0px;
+   margin-top: 140px ;
+}
+
+.btn {
+font-size: 20px;
+color:black ;
+background-color: #FADEC7;
+padding: 33px 51px 33px 51px;
+border-radius: 10px ;
+stroke: black;
+stroke-width: 1;
+text-decoration: none;
+margin-top : 30px ;
+
+}
+
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+   
+}
+.home-main-section .img-wrapper {
+    flex-grow: 1 ;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.home-main-section .myself-image {
+    background-image: url(/image/image-removebg-preview.png);
+    flex-grow: 1 ;
+    max-height: 100vh;
+    min-width: 50vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.home-main-section .call-to-action {
+    display : flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    margin : 1rem ;
+    align-self: center;
+}
+
+.home-main-section .icons8{
+    position: relative;
+   
+}
+@media (max-width:900px) {
+    .home-main-section .img-wrapper {
+        display: none ;
+    }
+
+    .home-main-section {
+        justify-content: center;
+    }
+}
