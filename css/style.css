@@ -78,15 +78,16 @@ body {
     color : white ;
     margin-left: 1rem;
     text-decoration : none ;
-    padding : 20px ;
+    padding : 1.46vw ;
     display: block;
 }
 
 .main-nav ul li.active a {
     color : wheat ;
     text-decoration : none ;
-    padding : 20px ;
+    padding : 1.46vw ;
     display: block;
+    
 }
 
 
@@ -146,18 +147,18 @@ body {
     color : #2F303A ;
     margin-left: 1rem;
     text-decoration : none ;
-    padding : 20px ;
+    padding : 1.46vw ;
     display: block;
 }
 
 .main-header.sticky .main-nav ul li.active a {
-    color : red ;
+    color : grey ;
     text-decoration : none ;
-    padding : 20px ;
+    padding : 1.46vw ;
     display: block;
 }
 .active , .main-header.sticky .main-nav a:hover {
-    color : red;
+    color : grey;
 }
 
 
@@ -168,40 +169,42 @@ body {
 }
 
 .title {
-    font-weight: 400 ;
-    font-size : 40px ;
+    width: 71.5vw;
+    height: auto;
+    font-size : 2vw ;
     margin-bottom: 1rem;
     color: white ;
+    
   
 }
 
 .subtitle {
-    font-weight: 400;
-    font-size: 18px; 
-    margin-bottom: 2rem ;
+    width: 810px;
+    height: auto;
+    font-size: 1.09vw; 
     display: flex;
     justify-content: flex-start ;
     align-items: flex-start;
     color: #FFFFFF;
+    margin-bottom: 1rem ;
 }
 .subtitle2 {
-
-    font-weight: 400 ;
-    font-size: 20px;
+    font-size: 1.46vw;
     margin-bottom: 0px;
    margin-top: 140px ;
 }
 
 .btn {
-font-size: 20px;
+font-size: 1.46vw;
 color:black ;
 background-color: #FADEC7;
-padding: 33px 51px 33px 51px;
+padding: 2.415vw 3.733vw 2.415vw 3.733vw;
 border-radius: 10px ;
 stroke: black;
 stroke-width: 1;
 text-decoration: none;
-margin-top : 30px ;
+margin-top : 10px ;
+
 
 }
 
@@ -217,16 +220,17 @@ margin-top : 30px ;
     flex-direction: column;
     display: flex;
     align-items: stretch;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .home-main-section .myself-image {
     background-image: url(/image/image-removebg-preview.png);
     flex-grow: 1 ;
     max-height: 100vh;
-    min-width: 50vw;
+    min-width: 60vw;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top right;   
+    margin-left: -50vw;
 }
 
 .home-main-section .call-to-action {
