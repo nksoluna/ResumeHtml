@@ -13,7 +13,7 @@
 }
 
 .about-me-section .full-img {
-    margin-top : 50vh ;
+    margin-top : 30vh ;
     background-image: url(/image/my-pic.jpg);
     width: 100vw;
     height:  100vh; 
@@ -25,17 +25,67 @@
     background-repeat: no-repeat;
 }
 
-.about-me-section .action-a {
+.about-me-section .border {
 
     display : flex ;
     flex-direction: column;
-    align-items: flex-end;
-    margin : 1rem ;
+    align-items: stretch;
+    margin-top : 1rem ;
     align-self:flex-end;
+    width: 100vw; 
+    height: 100vh;
+    
+   
 }
 .space {
-    margin-top: 50vh ;
+ 
+    margin-top: 5vh ;
+    font-size: 2.25vw;
+    margin-right: 2vw;
+    margin-left: 6vw;
+    
 }
+.sub-space {
+    margin-left: 6vw;
+    margin-right: 2.2vw;
+    margin-top: 2vh; 
+    font-size : 1.3vw ;
+    float: left;
+}
+
+.content {
+    margin-left : 6vw;
+}
+
+.sub-space-highlight {
+    
+    margin-top: 2vh; 
+    font-size : 1.3vw ;
+    color: wheat;
+    display: inline-block;
+    /* float: left; */
+}
+.space-border {
+    width: 100vh;
+    display: inline-block;
+    margin-top:1vh;
+}
+
+.second-btn {
+    font-size : 1.2vw;
+    color: black ;
+    text-decoration: none;
+    padding: 4vh 1vw 4vh 1.2vw;
+    border-radius: 10px;
+    border: solid black 1px;
+    background-color: #FADEC7;
+    
+    width: 19.7vw;
+    margin-left : 6vw ;
+    
+    
+}
+
 @media(max-width : 900px) {
 
     .about-me-section {
