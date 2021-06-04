@@ -3,9 +3,14 @@
     flex-grow: 1;
     align-items: stretch;
     justify-content: flex-start;
+    
 }
-
-.hobbies-title {
+.border {
+    width: 100%;
+    
+ 
+}
+.contents-title {
     margin-top : 30vh ;
     font-size: 3vw;
     color: white ;
@@ -13,8 +18,9 @@
 }
 
 .bar2 {
+    /* border : 1px black solid ; */
+    height: 15vh;
     
-    height: 10vh;
 }
 
 .space-bar {
@@ -22,7 +28,7 @@
     width: 1vh;
     margin-left: 24.25vw;
 }
-.hobbies-article {
+.hobbies-rectangle {
    
     background-color: white;
     width : 21.4vw;
@@ -32,15 +38,16 @@
     border-radius: 10px;
     color: black;
     font-size : 1.5vw;
-    margin-left : 5vw;
+    margin-left : 5.5vw;
     text-align: center;
     box-sizing: border-box;
     display: inline-block;
-   
+  
+
     
 }
 
-.hobbies-long-article {
+.hobbies-long-rectangle {
    
     background-color: white;
     width : 25.4vw;
@@ -50,18 +57,57 @@
     border-radius: 10px;
     color: black;
     font-size : 1.5vw;
-    margin-left : 5vw;
-    text-align: center;
-    box-sizing: border-box;
-    display: inline-block;
-   
+    margin-left : 31.5vw;
+   align-items: center;
+   justify-content: center;
+    display: flex;
+    margin-bottom: 40vh;
     
 }
 
 .picborder {
-    border : solid black 1px;
+    border : solid black 1px; 
+    display: flex ;
+    height: 30px;
     width: 30px;
-    height : 30px ;
-    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5vw;
+    padding-top : 2vh ;
+}
+
+@media (max-width : 600px) {
+    .hobbies-section {
+        align-items: center;
+        margin-top: 15rem;
+      
+    }
+
+.contents-title {
+    font-size: 1.5rem;
+       align-items: center;
+       width: 50%;
+       margin-left: 30px;
+       position: relative !important;
+       display: flex;
+       margin-top: 10rem;
+}    
+    .hobbies-rectangle {
+        width : 70%;
+        position: relative;
+        font-size: 0.5rem;
+        margin-left: 35px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .bar2 {
+        display: none;
+    }
     
+    .hobbies-long-rectangle {
+        width: 70%;
+        margin-left: 35px;
+        font-size: 0.5rem ;
+    }
 }

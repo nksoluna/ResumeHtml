@@ -1,18 +1,18 @@
-.about-me-section {
+#about-me-section {
     display: flex;
     flex-grow: 1;
     align-items: stretch;
     justify-content: space-between;
 }
 
-.about-me-section .a-img-wrapper {
+#about-me-section .a-img-wrapper {
     flex-grow: 1 ;
     align-items: stretch;
     justify-content:  flex-start;
     flex-direction: column;
 }
 
-.about-me-section .full-img {
+#about-me-section .full-img {
     margin-top : 30vh ;
     background-image: url(/image/my-pic.jpg);
     width: 100vw;
@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
 }
 
-.about-me-section .border {
+#about-me-section .border {
 
     display : flex ;
     flex-direction: column;
@@ -86,14 +86,63 @@
     
 }
 
-@media(max-width : 900px) {
+@media(max-width : 600px) {
 
-    .about-me-section {
+    #about-me-section {
         align-items: center;
+       
+        
     }
 
-    .about-me-section .a-img-wrapper {
+    #about-me-section .a-img-wrapper {
         display: none;
     }
+
+    #about-me-section .full-img {
     
+        display: none;
+    }
+   .space {
+       font-size: 1.5rem;
+       align-items: center;
+       width: 50%;
+       margin-left: 50px;
+       position: relative !important;
+       display: flex;
+
+    
+   }
+   .space-border {
+       align-items: center;
+       /* border: solid white 1px; */
+   }
+   .sub-space {
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       font-size: 1.3rem;
+     
+   }
+   .sub-space-highlight {
+    position: relative;
+    font-size: 1.3rem ;
+    margin: 40px 0px 0px -190px  ;
+   
+   }
+.content {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 0.9rem;
+       line-height: 1.5rem;
+       width: 70%;
+   }
+   .second-btn {
+    font-size : 0.6rem;
+    width: 11rem;
+    height: 10mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
 }

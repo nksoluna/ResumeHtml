@@ -8,34 +8,49 @@
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/aboutme.css" rel="stylesheet">
     <link href="/css/hobbies.css" rel="stylesheet">
+    <link href="/css/skills.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/javascript/stickybar.js"></script>  
     <script type="text/javascript" src="/javascript/activeonclick.js"></script>
- 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+
     <title>Piyapong Thammachasopit</title>
 </head>
 <body class="container full-height-grow">
-  <header class="main-header">
-      <a href="/" class="brand-logo">
-    <span class="logo1"></span>
-    Piyapong
-     </a>
-     <nav class="main-nav">
-         <ul>
-             <li class="active"><a href="#about">About ME</a></li>
-             <li><a href="#project">PROJECT</a></li>
-             <li><a href="#circular">Circular Activities</a></li>
-             <li><a href="#skills">skills</a></li>
-             <li><a href = "#contact">CONTACT</a></li>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <span class="logo1"></span>
+          <div class="nav-title">
+            Piyapong
+          </div>
+        
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
           
-         </ul>
-     </nav>
-  </header> 
+           <a href="#about-me-section">About ME</a>
+            <a href="#skills-section">skill</a>
+            <a href="#project">project</a>
+            <a href="#cirricular">cirricular activities</a>
+            <a href = "#contact">CONTACT</a>
+        </div>
+      </div>
   <section class = "home-main-section">
       <div class="call-to-action">
           <span class="subtitle2">welcome to my site</span>  
           <h1 class="title">Piyapong Thammachaisopit</h1>
-          <span class="subtitle">I'm a  Student in Bachelor's degree</span>   <br> 
+          <span class="subtitle">I'm a  Student in Bachelor's degree</span>  
             <span class="subtitle">Computer Engineering  - Prince of Songkhla university</span>      
             <span class="subtitle">4th Year -  Birthday : 23 Oct 1999 </span>
      
@@ -45,7 +60,7 @@
  <div class="myself-image"> </div>
 <div class="img-wrapper"></div>
  </section>
-<section class="about-me-section">
+<section id="about-me-section">
    <div class="a-img-wrappers"></div>
     <div class="full-img"></div> 
    
@@ -92,21 +107,45 @@
 </section>
 <section class="hobbies-section">
     <section class="border">
-    <span class="hobbies-title">hobbies & interest</span>
+    <span class="contents-title">hobbies & interest</span>
     
-    <div class="hobbies-article"><div class="picborder"><img src="https://img.icons8.com/ios/30/000000/controller.png"/></div>&nbsp;&nbsp;&nbsp;&nbsp;game</div>
-     <div class="hobbies-article"><img src="https://img.icons8.com/pastel-glyph/30/000000/laptop-coding--v1.png"/>&nbsp;&nbsp;&nbsp;&nbsp;developing</div> 
-    <div class="hobbies-article"><img src="https://img.icons8.com/android/30/000000/guitar.png"/>&nbsp;&nbsp;&nbsp;&nbsp;ukulele</div>
+    <div class="hobbies-rectangle"><img src="https://img.icons8.com/ios/30/000000/controller.png" />&nbsp;&nbsp;&nbsp;&nbsp;game</div>
+     <div class="hobbies-rectangle"><img src="https://img.icons8.com/pastel-glyph/30/000000/laptop-coding--v1.png"/>&nbsp;&nbsp;&nbsp;&nbsp;developing</div>
+    <div class="hobbies-rectangle"><img src="https://img.icons8.com/android/30/000000/guitar.png"/>&nbsp;&nbsp;&nbsp;&nbsp;ukulele</div>
 
  <div class="bar2"></div>
-    <div class="hobbies-article"><img src="https://img.icons8.com/pastel-glyph/30/000000/website--v2.png"/>&nbsp;&nbsp;web design</div> 
-         <div class="hobbies-article"><img src="https://img.icons8.com/material/30/000000/read--v1.png"/>&nbsp;&nbsp;&nbsp;&nbsp;reading</div>
-        <div class="hobbies-article"><img src="https://img.icons8.com/android/30/000000/money-bag.png"/>&nbsp;&nbsp;&nbsp;&nbsp;investing</div> 
+    <div class="hobbies-rectangle"><img src="https://img.icons8.com/pastel-glyph/30/000000/website--v2.png"/>&nbsp;&nbsp;web design</div> 
+         <div class="hobbies-rectangle"><img src="https://img.icons8.com/material/30/000000/read--v1.png"/>&nbsp;&nbsp;&nbsp;&nbsp;reading</div>
+        <div class="hobbies-rectangle"><img src="https://img.icons8.com/android/30/000000/money-bag.png"/>&nbsp;&nbsp;&nbsp;&nbsp;investing</div> 
      <div class="bar2"></div><div class="space-bar"></div>
-     <div class="hobbies-long-article"><img src="https://img.icons8.com/pastel-glyph/30/000000/website--v2.png"/>&nbsp;&nbsp;computer repairing</div> 
+     <div class="hobbies-long-rectangle"><img src="https://img.icons8.com/material-sharp/30/000000/computer-support.png"/>&nbsp;&nbsp;computer repairing</div> 
 </div>
-    
-
    </section>
+   </section>
+<section id="skills-section"> 
+    <section class="border">
+ <div class="contents-title skills-margin">skills</div>
+ 
+ <ul>
+ <a href="#a" class="skills-rectangle skill-active">technical skills</a>
+ <a href="#a" class="skills-rectangle sub-skill-margin">soft&hard skills</a>
+ <a href="#a" class="skills-rectangle sub-skill-margin">language</a>
+ <div id="slide-carousel">
+  <div class="splide_track">
+      <ul class="splide_list">
+          <li class="splide_slide">01</li>
+          <li class="splide_slide">02</li>
+          <li class="splide_slide">03</li>
+      </ul>
+  </div>
+ </div>
+</ul>
+
+</section>
+</section> 
+<section id="project-section">
+    
+</section>
 </body>
 </html>
+

@@ -1,0 +1,52 @@
+#skills-section {
+    display: flex;
+    flex-grow : 1 ;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.skills-margin{
+    margin-top : -20vh; 
+}
+
+.skills-rectangle {
+    height: 8.3vh;
+    width : 15vw ;
+    background-color: white;
+    border: 1px black solid ;
+    border-radius: 0.52vw;
+    margin-top : 5vh;
+    margin-bottom : 10vh;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7vw;
+    text-decoration: none;
+    color: black;
+}
+
+.sub-skill-margin {
+    margin-top : 20vh;
+}
+
+
+.skill-active , .skills-rectangle:hover {
+    color : gray ;
+}
+
+.content-title ul a.skill-active {
+    color : gray ;
+}
+#slide-carousel {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1; 
+    align-items: flex-start;
+    border: 1px solid white;
+    width: 50% ;
+    margin-left: 40vw;
+    height:100vh;
+    margin-top : -80vh;
+}   
+

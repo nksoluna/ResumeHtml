@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0; 
+    margin : 0 ;
+    background-color: #2F303A;
+    font-family: 'ASTRO' , sans-serif ;
+    min-height: 100vh;
+}
 p {
     color: white ;
     font-size: 0.95vw ;
@@ -17,156 +28,72 @@ span {
     flex-direction: column;
     align-items: flex-start;
 }
-body {
-    padding: 0; 
-    margin : 0 ;
+  .nav {
+    height: 50px;
+    width: 100%;
     background-color: #2F303A;
-    font-family: 'ASTRO' , sans-serif ;
-    min-height: 100vh;
-}
-
-.logo1 {
+    position: relative;
+    margin-top: 20px;
+  }
+  .logo1 {
     width: 56px;
     height: 59px;
     background-image: url('/image/logo1.png');
-    margin-right: 10px;
-    image-resolution: 300dpi;
-}
-.full-height-grow {
-    display: flex; 
-    flex-direction:  column ; 
-}
-.main-header {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center ;
-    height: 70px;
-    width: 100%;
-    position: fixed;
-    background-color: #2F303A;
-    top : 0 ;
-    left : 0 ;
-    
-}
-.brand-logo {
-    display: flex; 
-    align-items: center; 
-    text-decoration: none ;
-    margin-left: 8rem ; 
-    margin-top: 0px;
-    /* 1 rem = 16px */
     position: relative;
-    color: #FFFFFF ;
-
+    background-repeat: no-repeat;
+ 
 }
-.main-nav {
-    overflow: hidden;
-    background-color: #2F303A;
-    width: 100%;
   
-}
-.main-nav ul {
+  .nav > .nav-header {
     display: flex; 
-    flex-direction: row;
-    align-items: flex-start;
-    margin : 0 ;
-    padding : 0 ;
-    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start ;
+    cursor: pointer;
+    width: 20%;
     position: relative;
-    font-size: 14px;
-    margin-left: 250px;
-    
-    
-} 
+  }
+  
+  .nav > .nav-header > .nav-title {
+ 
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+  }
+  
+  .nav > .nav-header > .nav-title:hover {
+    color: #FADEC7;
+  }
 
-.main-nav a {
-    color : white ;
-    margin-left: 1rem;
-    text-decoration : none ;
-    padding : 1.46vw ;
-    display: block;
-}
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    margin-top: -50px;
+  }
+  
+  .nav > .nav-links > a {
+     font-size: 14px;
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
 
-.main-nav ul li.active a {
-    color : wheat ;
-    text-decoration : none ;
-    padding : 1.46vw ;
-    display: block;
-    
-}
-
-
-.main-nav a:hover {
-    color : #FFFFFF ;
-}
-
-.active , .main-nav a:hover {
-    color : wheat ;
-}
-
-.main-header.sticky {
-    padding-top: 0px  ;
-    background-color: white;
-}
-
-.main-header.sticky .brand-logo {
-    display: flex; 
-    align-items: center; 
-    text-decoration: none ;
-    margin-left: 8rem ; 
-    margin-top: 0px;
-    /* 1 rem = 16px */
-    position: relative;
-    color: #2F303A ;
-
-}
-.main-header.sticky .main-nav {
-    padding-top: 0px  ;
-    background-color: white;
-    text-shadow: #2F303A;
-}
-
-.main-header.sticky .main-nav ul {
-    display: flex; 
-    flex-direction: row;
-    align-items: flex-start;
-    margin : 0 ;
-    padding : 0 ;
-    list-style: none;
-    position: relative;
-    font-size: 14px;
-    margin-left: 250px;
-    
-    
-} 
-
-.main-header.sticky .logo1 {
-    width: 56px;
-    height: 59px;
-    background-image: url('/image/logo2.png');
-    margin-right: 10px;
-    image-resolution: 1000dpi;
-}
-
-.main-header.sticky .main-nav a {
-    color : #2F303A ;
-    margin-left: 1rem;
-    text-decoration : none ;
-    padding : 1.46vw ;
-    display: block;
-}
-
-.main-header.sticky .main-nav ul li.active a {
-    color : grey ;
-    text-decoration : none ;
-    padding : 1.46vw ;
-    display: block;
-}
-.active , .main-header.sticky .main-nav a:hover {
-    color : grey;
-}
-
-
+  }
+  
+  .nav > .nav-links > a:hover {
+    color:#FADEC7 ;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
 .container {
     max-width: 1200px;
     margin : 0 auto ;
@@ -235,6 +162,7 @@ margin-top : 10px ;
     background-repeat: no-repeat;
     background-position: top right;   
     margin-left: -50vw;
+   
 }
 
 .home-main-section .call-to-action {
@@ -243,18 +171,87 @@ margin-top : 10px ;
     align-items: flex-start;
     margin : 1rem ;
     align-self: center;
+    
 }
 
-.home-main-section .icons8{
-    position: relative;
-   
-}
-@media (max-width:900px) {
+
+@media (max-width:600px) {
+    .main-header.sticky {
+        display: none;
+    }
+    .main-header {
+        border: 1px white solid;
+    }
+
     .home-main-section .img-wrapper {
         display: none ;
     }
 
     .home-main-section {
-        justify-content: center;
+        justify-content: center  ;
+        width: 50%;
+        /* border: 1px solid white; */
+        position: relative;
+   
     }
+    .logo1 , .brand-logo {
+        display: none;
+    }
+    .logo-nav-toggle {
+        width: 56px;
+        height: 59px;
+        margin-top: 160px;
+        margin-left: 20px;
+        background-image: url('/image/logo1.png');
+        background-repeat: no-repeat;
+    }
+
+
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+        cursor: pointer;
+      }
+      .nav > .nav-links {
+        /* position: absolute; */
+        margin-top: 0px;
+        display: block;
+        width: 100%;
+        background-color: #2F303A;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .nav > .nav-links > a {
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        border: white 1px solid;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
 }
