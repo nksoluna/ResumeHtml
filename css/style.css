@@ -220,19 +220,30 @@ margin-top : 10px ;
         display: none ;
     }
 
-   .home-main-section .call-to-action {
-      display: none;
-    }
-
-    .home-main-section .myself-image {
-    position: relative;
-    }
-
     .home-main-section {
       display: inline-block;
         /* border: 1px solid white; */
         position: relative;
    
+    }
+    .subtitle {
+      display: none;
+    }
+
+    .title {
+      display: none;
+    }
+    .btn {
+      display: none ;
+    }
+
+    .subtitle2 {
+      font-size: 22px ;
+      transform: translateY(170px);
+      margin-bottom: 140px;
+      margin-left: 10px;
+  
+ 
     }
     .logo1 , .brand-logo {
         display: none;
