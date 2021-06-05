@@ -28,19 +28,25 @@ span {
     flex-direction: column;
     align-items: flex-start;
 }
+
   .nav {
-    height: 50px;
-    width: 100%;
+    height: 90px;
+    width: 100% ;
     background-color: #2F303A;
-    position: relative;
-    margin-top: 20px;
+    position: fixed ;
+    margin-top: 0px ;
+    margin-left: -130px;
   }
-  .logo1 {
+
+  .nav > .nav-header > .logo1 {
     width: 56px;
     height: 59px;
     background-image: url('/image/logo1.png');
     position: relative;
     background-repeat: no-repeat;
+    margin-top: 20px;
+    transform: translateX(130px);
+
  
 }
   
@@ -59,7 +65,8 @@ span {
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
-    margin-top: 10px;
+    margin-top: 30px;
+    transform: translateX(130px);
   }
   
   .nav > .nav-header > .nav-title:hover {
@@ -75,6 +82,7 @@ span {
     float: right;
     font-size: 18px;
     margin-top: -50px;
+    margin-right: 200px;
   }
   
   .nav > .nav-links > a {
@@ -83,6 +91,7 @@ span {
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
+    transform: translateX(130px);
 
   }
   
@@ -206,12 +215,20 @@ margin-top : 10px ;
         background-repeat: no-repeat;
     }
 
+    .nav {
+      position: relative;
+      margin-left: 0px;
+    }
+    .nav > .nav-header > .nav-title  {
+      transform: translateX(-10px);
+    }
 
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 0px;
+        margin-top: 25px;
       }
       .nav > .nav-btn > label {
         display: inline-block;
@@ -229,9 +246,10 @@ margin-top : 10px ;
         border-top: 2px solid #eee;
         cursor: pointer;
       }
+
       .nav > .nav-links {
         /* position: absolute; */
-        margin-top: 0px;
+        margin: 0px;
         display: block;
         width: 100%;
         background-color: #2F303A;
@@ -240,12 +258,14 @@ margin-top : 10px ;
         overflow-y: hidden;
         top: 50px;
         left: 0px;
+
       }
       .nav > .nav-links > a {
         margin-top: 20px;
         display: block;
         width: 100%;
         border: white 1px solid;
+        transform: translateX(0px);
       }
       .nav > #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
