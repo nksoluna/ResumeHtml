@@ -210,25 +210,26 @@ margin-top : 10px ;
 
 
 @media (max-width:600px) {
-  body {
-    overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
+  html, body {
+    overflow-x: hidden;
   }
-
-    .main-header.sticky {
-        display: none;
-    }
-    .main-header {
-        border: 1px white solid;
-    }
-
+  body {
+    position: relative !important;
+  }
     .home-main-section .img-wrapper {
         display: none ;
     }
 
+   .home-main-section .call-to-action {
+      display: none;
+    }
+
+    .home-main-section .myself-image {
+    position: relative;
+    }
+
     .home-main-section {
-        justify-content: center  ;
-        width: 50%;
+      display: inline-block;
         /* border: 1px solid white; */
         position: relative;
    
