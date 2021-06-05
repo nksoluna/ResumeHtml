@@ -35,9 +35,12 @@ span {
     background-color: #2F303A;
     position: fixed ;
     margin-top: 0px ;
-    margin-left: -130px;
+    left: 0;
   }
-
+  
+  .nav.sticky {
+    background-color: white;
+  }
   .nav > .nav-header > .logo1 {
     width: 56px;
     height: 59px;
@@ -45,11 +48,13 @@ span {
     position: relative;
     background-repeat: no-repeat;
     margin-top: 20px;
-    transform: translateX(130px);
-
- 
+    transform: translateX(130px); 
 }
-  
+
+  .nav.sticky >  .nav-header > .logo1 {
+    background-image: url('/image/logo2.png');
+  }
+
   .nav > .nav-header {
     display: flex; 
     justify-content: flex-start;
@@ -67,6 +72,11 @@ span {
     padding: 10px 10px 10px 10px;
     margin-top: 30px;
     transform: translateX(130px);
+
+  }
+  
+  .nav.sticky > .nav-header > .nav-title {
+    color: #2f303a;
   }
   
   .nav > .nav-header > .nav-title:hover {
@@ -94,10 +104,25 @@ span {
     transform: translateX(130px);
 
   }
+
+  .nav > .nav-links > a.active {
+    color : #FADEC7
+  }
+  nav.sticky > .nav-links > a {
+    
+    color: #2F303A;
+  }
   
   .nav > .nav-links > a:hover {
     color:#FADEC7 ;
   }
+  .nav.sticky > .nav-links > a:hover {
+    color:gray ;
+  }
+  .nav.sticky > .nav-links > a.active {
+    color:gray ;
+  }
+  
   
   .nav > #nav-check {
     display: none;
@@ -185,6 +210,11 @@ margin-top : 10px ;
 
 
 @media (max-width:600px) {
+  body {
+    overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+  }
+
     .main-header.sticky {
         display: none;
     }
@@ -221,6 +251,8 @@ margin-top : 10px ;
     }
     .nav > .nav-header > .nav-title  {
       transform: translateX(-10px);
+      font-size: 22px;
+  
     }
 
     .nav > .nav-btn {
