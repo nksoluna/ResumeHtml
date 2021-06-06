@@ -265,6 +265,7 @@ margin-top : 10px ;
     .nav {
       position: fixed;
       margin-left: 0px;
+      height: 10%;
       z-index: 1;
     }
     .nav > .nav-header > .nav-title  {
@@ -272,7 +273,7 @@ margin-top : 10px ;
       font-size: 22px;
       margin-top: 15px;
     }
-
+  
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
@@ -288,8 +289,7 @@ margin-top : 10px ;
         transform: translateX(-50px);
       }
       .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-        background-color: rgba(0, 0, 0, 0.3);
-
+        color: gray ;
       }
       .nav > .nav-btn > label > span {
         display: block;
@@ -302,33 +302,56 @@ margin-top : 10px ;
         border-top: 2px solid #2F303A;
       }
       .nav > .nav-links {
-        /* position: absolute; */
+        position: absolute; 
         margin: 0px;
         display: block;
         width: 100%;
-        background-color: #2F303A;
+        background-color: #2f303a;
         height: 0px;
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease-in;
         overflow-y: hidden;
         top: 50px;
-        left: 0px;
-      
+        left: 0px;  
+
+      }
+
+      .nav.nav.sticky > .nav-links { 
+          background-color: white;
+   
+          
       }
       .nav > .nav-links > a {
-        margin-top: 20px;
+        margin-top: 10px;
         display: block;
         width: 50%;
-        border-bottom: white 1px solid;
-        transform: translateX(0px);
         align-items: center ;
-        
+        position: relative;
+        transform: translateX(55px);
+   
+      }
+      .nav.sticky > .nav-links > a { 
+        color: #2F303A;
       }
       .nav > #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
+       
       }
       .nav > #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
+        height: calc(100vh - 340px);
+        overflow-y: hidden;
+        background-color: #000;
+      }
+      .nav > #nav-check:checked ~ .nav-header {
+        width: 100%;
+        background-color: #000;
+      }
+      .nav.sticky > #nav-check:checked ~ .nav-links {
+      
+        background-color: #FFF;
+      }
+      .nav.sticky > #nav-check:checked ~ .nav-header {
+        width: 100%;
+        background-color: #FFF;
       }
       .nav.sticky {
         height: 60px;
@@ -343,79 +366,111 @@ margin-top : 10px ;
   .logo1 , .brand-logo {
     display: none;
 }
-  .nav {
-    position: fixed;
-    margin-left: 0px;
-    z-index: 1;
+.logo-nav-toggle {
+    width: 56px;
+    height: 59px;
+    margin-top: 160px;
+    margin-left: 20px;
+    background-image: url('/image/logo1.png');
+    background-repeat: no-repeat;
+}
+
+.nav {
+  position: fixed;
+  margin-left: 0px;
+  height: 10%;
+  z-index: 1;
+}
+.nav > .nav-header > .nav-title  {
+  transform: translateX(50px);
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 10px;
   }
-  .nav > .nav-header > .nav-title  {
-    transform: translateX(50px);
-    font-size: 22px;
-    margin-top: 15px;
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    transform: translateX(-50px);
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    color: gray ;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+    cursor: pointer;
+  }
+  .nav.sticky > .nav-btn > label > span {
+    border-top: 2px solid #2F303A;
+  }
+  .nav > .nav-links {
+    position: absolute; 
+    margin: 0px;
+    display: block;
+    width: 100%;
+    background-color: #2f303a;
+    height: 0px;
+    transition: all 0.5s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;  
+
   }
 
-  .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      margin-top: 10px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-      transform: translateX(-50px);
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+  .nav.nav.sticky > .nav-links { 
+      background-color: white;
 
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-      cursor: pointer;
-    }
-    .nav.sticky > .nav-btn > label > span {
-      border-top: 2px solid #2F303A;
-    }
-    .nav > .nav-links {
-      /* position: absolute; */
-      margin: 0px;
-      display: block;
-      width: 100%;
-      background-color: #2F303A;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    
-    }
-    .nav > .nav-links > a {
-      margin-top: 20px;
-      display: block;
-      width: 50%;
-      border-bottom: white 1px solid;
-      transform: translateX(0px);
-      align-items: center ;
       
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-    .nav.sticky {
-      height: 60px;
-    }
-    nav.sticky > .nav-links > a {
+  }
+  .nav > .nav-links > a {
+    margin-top: 10px;
+    display: block;
+    width: 50%;
+    align-items: center ;
+    position: relative;
+    transform: translateX(55px);
+
+  }
+  .nav.sticky > .nav-links > a { 
+    color: #2F303A;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 340px);
+    overflow-y: hidden;
+    background-color: #000;
+  }
+  .nav > #nav-check:checked ~ .nav-header {
+    width: 100%;
+    background-color: #000;
+  }
+  .nav.sticky > #nav-check:checked ~ .nav-links {
   
-      color: white;
-    }
+    background-color: #FFF;
+  }
+  .nav.sticky > #nav-check:checked ~ .nav-header {
+    width: 100%;
+    background-color: #FFF;
+  }
+  .nav.sticky {
+    height: 60px;
+  }
+  nav.sticky > .nav-links > a {
+
+    color: white;
+  }
 }
