@@ -243,11 +243,7 @@ margin-top : 10px ;
     }
 
     .subtitle2 {
-      font-size: 22px ;
-      transform: translateY(170px);
-      margin-bottom: 140px;
-      margin-left: 10px;
-  
+      display: none;
  
     }
     .logo1 , .brand-logo {

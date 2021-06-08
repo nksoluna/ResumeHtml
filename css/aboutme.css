@@ -10,6 +10,10 @@
     align-items: stretch;
     justify-content:  flex-start;
     flex-direction: column;
+
+}
+#about-me-section .mobile-about-me-pic {
+    display: none ;
 }
 
 #about-me-section .full-img {
@@ -25,7 +29,7 @@
     background-repeat: no-repeat;
 }
 
-#about-me-section .border {
+#about-me-section .ab-border {
 
     display : flex ;
     flex-direction: column;
@@ -40,7 +44,7 @@
 .space {
  
     margin-top: 5vh ;
-    font-size: 2.25vw;
+    font-size: 26px ;
     margin-right: 2vw;
     margin-left: 6vw;
     
@@ -49,18 +53,19 @@
     margin-left: 6vw;
     margin-right: 2.2vw;
     margin-top: 2vh; 
-    font-size : 1.3vw ;
+    font-size : 18px ;
     float: left;
 }
 
 .content {
     margin-left : 6vw;
+    font-size : 12px ;
 }
 
 .sub-space-highlight {
     
     margin-top: 2vh; 
-    font-size : 1.3vw ;
+    font-size : 18px ;
     color: wheat;
     display: inline-block;
     /* float: left; */
@@ -72,76 +77,139 @@
 }
 
 .second-btn {
-    font-size : 1.2vw;
+    font-size : 16px;
     color: black ;
     text-decoration: none;
     padding: 4vh 1vw 4vh 1.2vw;
     border-radius: 10px;
     border: solid black 1px;
     background-color: #FADEC7;
-    
     width: 19.7vw;
-    margin-left : 6vw ;
-    
-    
+    margin-left : 6vw ; 
 }
 
 @media(max-width : 767px) {
-
     #about-me-section {
         align-items: center;
-       
-        
+   
     }
+    #about-me-section .mobile-about-me-pic {
+
+    }
+    
 
     #about-me-section .a-img-wrapper {
         display: none;
     }
 
     #about-me-section .full-img {
-    
-        display: none;
+         display: none ;
     }
+
    .space {
-       font-size: 1.5rem;
-       align-items: center;
-       width: 50%;
+        margin-left:  0; 
+       align-items: flex-start;
+       width: 100%;
        position: relative !important;
        display: flex;
-
-    
+       font-size: 20px;
    }
    .space-border {
        align-items: center;
-       /* border: solid white 1px; */
+       width: 100%;
+      
+       
+
    }
    .sub-space {
-       display: flex;
+       position: relative;
        justify-content: flex-start;
-       align-items: center;
-       font-size: 1.3rem;
-     
+       font-size: 16px;
+       display: flex;
+        margin-left: 0px;
+
    }
    .sub-space-highlight {
-    position: relative;
-    font-size: 1.3rem ;
-    margin: 40px 0px 0px -190px  ;
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px ;
+    margin-right: 30px;
+
+    transform: translateX(-5px);
+   }
+
+.content {
+    margin-top: 20px;
+       display: flex;
+        justify-content: stretch;
+        align-items: flex-start;
+       font-size: 12px;
+       line-height: 1.5rem;
+       width: 100%;
+       margin-left: 0;
    
    }
-.content {
-       display: flex;
-        justify-content: center;
-        align-items: center;
-       font-size: 0.9rem;
-       line-height: 1.5rem;
-       width: 70%;
-   }
    .second-btn {
-    font-size : 0.6rem;
+    font-size : 10px;
     width: 11rem;
     height: 10mm;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 0px;
    }
+}
+
+@media (min-width : 768px ) and (max-width : 1000px) {
+    .space {
+        position: relative;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .sub-space-highlight {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        margin-right: 90px;
+        transform: translateX(-40px);
+         /* border: #FADEC7 1px solid;  */
+    }
+    .sub-space {
+        position: relative;
+        display: inline;
+        align-items: flex-start;
+        width: 30%;
+        
+
+    }
+    .content {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 90%;
+        transform: translateX(0px);
+    }
+    .second-btn {
+        font-size : 10px;
+        width: 11rem;
+        height: 10mm;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+       }
+    #about-me-section .a-img-wrapper {
+        border: #FADEC7 1px solid;
+    }
+
+    #about-me-section .full-img {
+         height:  80vh; 
+         display: flex; 
+         background-position: top;
+         transform: translateY(-50px);
+    }
+
+    #about-me-section .ab-border{
+        width: 60vw;
+
+    }
 }
