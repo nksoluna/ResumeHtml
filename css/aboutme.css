@@ -115,7 +115,7 @@
       
     #about-me-section {
         align-items: center;
-        transform: translateY(40px);
+        transform: translateY(10px);
         height: 100%;
       
     }
@@ -125,14 +125,15 @@
 
     #about-me-section .full-img {
         position: absolute;
-        width: 100%;
+        width: 80%;
         height: 60%;
-         transform: translateY(-150px);
+         transform: translateY(-240px);
          background-position: center;
+         margin-left: 37.5px;
     }
     #about-me-section .ab-border {
         position: relative;
-        transform: translateY(76vh);
+        transform: translateY(60vh);
         display: block;
         width: 100%;
     }
