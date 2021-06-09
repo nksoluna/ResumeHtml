@@ -151,7 +151,7 @@
    .sub-space {
        position: relative;
        justify-content: flex-start;
-       font-size: 14px;
+       font-size: 12px;
        display: flex;
         margin-left: 0px;
 
@@ -159,7 +159,7 @@
    .sub-space-highlight {
     display: flex;
     align-items: flex-start;
-    font-size: 14px ;
+    font-size: 12px ;
     margin-right: 30px;
 
     transform: translateX(-5px);
