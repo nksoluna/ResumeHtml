@@ -84,6 +84,7 @@
     background-color: #FADEC7;
     width: 19.7vw;
     margin-left : 6vw ; 
+    text-align: center;
 }
 .second-btn:hover {
     background-color: white;
@@ -91,6 +92,9 @@
 
   
 @media(max-width : 767px) {
+    .container .full-height-grow {
+        display: none;
+    }
     .home-main-section {
         display: none;
     }
@@ -111,7 +115,7 @@
       
     #about-me-section {
         align-items: center;
-        transform: translateY(100px);
+        transform: translateY(40px);
         height: 100%;
       
     }
@@ -122,19 +126,19 @@
     #about-me-section .full-img {
         position: absolute;
         width: 100%;
-        height: 70%;
-         transform: translateY(-180px);
+        height: 60%;
+         transform: translateY(-150px);
          background-position: center;
     }
     #about-me-section .ab-border {
         position: relative;
-        transform: translateY(72vh);
+        transform: translateY(76vh);
         display: block;
         width: 100%;
     }
 
    .space {
-        margin-left:  0; 
+       margin-left:  20px; 
        align-items: flex-start;
        width: 100%;
        position: relative !important;
@@ -151,29 +155,29 @@
    .sub-space {
        position: relative;
        justify-content: flex-start;
-       font-size: 16px;
+       font-size: 14px;
        display: flex;
-        margin-left: 0px;
+        margin-left: 20px;
 
    }
    .sub-space-highlight {
     display: flex;
     align-items: flex-start;
-    font-size: 16px ;
-    margin-right: 30px;
+    font-size: 14px ;
+    margin-right: 0px;
 
     transform: translateX(-5px);
    }
 
 .content {
-    margin-top: 20px;
+        margin-top: 20px;
        display: flex;
         justify-content: stretch;
         align-items: flex-start;
-       font-size: 12px;
+       font-size: 10px;
        line-height: 1.5rem;
-       width: 100%;
-       margin-left: 0;
+       width: 90%;
+       margin-left: 20px;
    
    }
    .second-btn {
@@ -183,8 +187,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 20px;
    }
+   .second-btn:hover {
+    background-color: white;
+}
 }
 
 @media (min-width : 768px ) and (max-width : 1280px) {
@@ -239,5 +246,8 @@
     #about-me-section .ab-border{
         width: 60vw;
 
+    }
+    .second-btn:hover {
+        background-color: white;
     }
 }
