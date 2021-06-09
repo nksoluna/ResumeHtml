@@ -127,13 +127,13 @@
         position: absolute;
         width: 80%;
         height: 60%;
-         transform: translateY(-240px);
+         transform: translateY(-200px);
          background-position: center;
          margin-left: 37.5px;
     }
     #about-me-section .ab-border {
         position: relative;
-        transform: translateY(60vh);
+        transform: translateY(66vh);
         display: block;
         width: 100%;
     }
