@@ -3,6 +3,7 @@
     flex-grow: 1;
     align-items: stretch;
     justify-content: space-between;
+    /* background-color: #2f303A; */
 }
 
 #about-me-section .a-img-wrapper {
